@@ -1,6 +1,6 @@
 import cricscraper as scrapper
 import structure
-import datetime import datetime
+from datetime import datetime
 
 # will crawl and scrape through all player 
 # profiles. Run this to update entire dataset

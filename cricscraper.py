@@ -54,7 +54,7 @@ def scrape(output_csv_path, player_id=FIRST_PLAYER_ID, last_player_id=LAST_PLAYE
             player_id += 1
             time.sleep(CRAWLER_DELAY)
             if success % 50 == 0:
-                csvfile.flush()
+                csvfile.flush()              
     with open("stat.txt", "w") as text_file:
         req = time.time() - start_time
         text_file.write("Total time = %d(s)\n" % req)
